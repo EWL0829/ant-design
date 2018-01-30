@@ -29,7 +29,11 @@ const columns = [{
   title: 'Address',
   dataIndex: 'address',
   key: 'address',
-}, {
+},{
+  title: 'Height',
+  dataIndex: 'height',
+  key: 'height',
+},{
   title: 'Action',
   key: 'action',
   render: (text, record) => (
@@ -50,16 +54,19 @@ const data = [{
   name: 'John Brown',
   age: 32,
   address: 'New York No. 1 Lake Park',
+  height: '1.8m',
 }, {
   key: '2',
   name: 'Jim Green',
   age: 42,
   address: 'London No. 1 Lake Park',
+  height: '1.8m',
 }, {
   key: '3',
   name: 'Joe Black',
   age: 32,
   address: 'Sidney No. 1 Lake Park',
+  height: '1.8m',
 }];
 
 ReactDOM.render(<Table columns={columns} dataSource={data} />, mountNode);
